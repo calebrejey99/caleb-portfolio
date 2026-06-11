@@ -1,0 +1,298 @@
+```css id="x91kzl"
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f0f0f;
+    color:#f5f5f5;
+    line-height:1.7;
+}
+
+/* NAVIGATION */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,15,15,0.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#d4af37;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+    color:#d4af37;
+}
+
+.hero h2{
+    font-size:1.4rem;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#d9d9d9;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.btn-primary,
+.btn-secondary{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    margin:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#d4af37;
+    color:#000;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid #d4af37;
+    color:#d4af37;
+}
+
+.btn-secondary:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+/* SECTION */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:50px;
+    color:#d4af37;
+    font-size:2.3rem;
+}
+
+/* CARDS */
+
+.skills-grid,
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card,
+.project-card{
+    background:#181818;
+    padding:30px;
+    border-radius:15px;
+    transition:.4s;
+    border:1px solid transparent;
+}
+
+.card:hover,
+.project-card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+}
+
+.card h3,
+.project-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+/* TIMELINE */
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.timeline-item{
+    background:#181818;
+    padding:25px;
+    border-left:4px solid #d4af37;
+    border-radius:8px;
+}
+
+.timeline-item h3{
+    color:#d4af37;
+    margin-bottom:5px;
+}
+
+.timeline-item span{
+    color:#bdbdbd;
+    font-size:0.95rem;
+}
+
+/* CONTACT */
+
+.contact-info{
+    text-align:center;
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:1.05rem;
+}
+
+.contact-info a{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#080808;
+    color:#888;
+}
+
+/* ANIMATIONS */
+
+.card,
+.project-card,
+.timeline-item{
+    animation:fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero h2{
+        font-size:1.1rem;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .section{
+        padding:80px 20px;
+    }
+
+
+}
+```
+a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+/* garde le menu blanc mais stylé au hover */
+.nav-links a {
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+/* boutons liens dans projets */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    color: #d4af37;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: #d4af37;
+    color: #000;
+}
